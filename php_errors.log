@@ -1,0 +1,254 @@
+[01-Oct-2024 00:23:48 UTC] Datos recibidos: Array
+(
+    [nombre] => lourdes martinez
+    [apellido] => lopez
+    [email] => tayron.arrieta@gruasshl.com
+    [firma] => data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAADICAYAAADGFbfiAAAAAXNSR0IArs4c6QAAEmlJREFUeF7t3b8PNcscB+CRKBQkGkFCkEi0CgUJQUeFQtybkEshUZKQaASVCIV/QFBRSCgkKkHcQodCokMoFAqFhELC+73OMO/cPb/mzOzZnfOc5Oa9975nZ3eemXM+OzO7e16SvAgQIECAQIPASxq2sQkBAgQIEEgCRCcgQIAAgSYBAdLEZiMCBAgQECD6AAECBAg0CQiQJjYbESBAgIAA0QcIECBAoElAgDSx2YgAAQIEBIg+QIAAAQJNAgKkic1GBAgQICBA9AECBAgQaBIQIE1sNiJAgAABAaIPECBAgECTgABpYrMRAQIECAgQfYAAAQIEmgQESBObjQgQIEBAgOgDBAgQINAkIECa2GxEgAABAgJEHyBAgACBJgEB0sRmIwIECBAQIPoAAQIECDQJCJAmNhsRIECAgADRBwgQIECgSUCANLHZiAABAgQEiD5AgAABAk0CAqSJzUYECBAgIED0AQIECBBoEhAgTWw2IkCAAAEBog8QIECAQJOAAGlisxEBAgQICBB9gAABAgSaBARIE5uNCBAgQECA6AMECBAg0CQgQJrYbESAAAECAkQfIECAAIEmAQHSxGYjAgQIEBAg+gABAgQINAkIkCY2GxEgQICAANEHCBAgQKBJQIA0sdmIAAECBASIPkCAAAECTQICpInNRgQIECAgQPQBAgQIEGgSECBNbDYiQIAAAQGiDxAgQIBAk4AAaWKzEQECBAgIEH2AAAECBJoEBEgTm40IECBAQIDoAwQIECDQJCBAmthsRIAAAQICRB8gQIAAgSYBAdLEZiMCBAgQECD6AAECBAg0CQiQJjYbESBAgIAA0QcIECBAoElAgDSx2YgAAQIEBIg+QIAAAQJNAgKkic1GBAgQICBA9AECBAgQaBIQIE1sNiJAgAABAaIPECBAgECTgABpYrMRAQIECAgQfYAAAQIEmgQESBObjQgQIEBAgOgDBAgQINAkIECa2GxEgAABAgJEHyBAgACBJgEB0sRmIwIECBAQIPoAAQIECDQJCJAmNhsRIECAgADRBwgQIECgSUCANLHtaqM3ppTenlL63q6O2sESILB5AQGy+Sa66QA/nlL61qGE51NK77qpNBsTIECgEBAg83aH96SUflpV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
+)
+
+[01-Oct-2024 00:23:48 UTC] Respuesta enviada: 
+[01-Oct-2024 01:51:30 UTC] PHP Warning:  Undefined array key "firma" in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 11
+[01-Oct-2024 01:51:30 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 13
+[01-Oct-2024 02:01:31 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Check_in::insert_user(), 3 passed in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20 and exactly 4 expected in C:\inetpub\wwwroot\checkin\conexion\functions.php:28
+Stack trace:
+#0 C:\inetpub\wwwroot\checkin\guardar_usuario.php(20): Check_in->insert_user()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\checkin\conexion\functions.php on line 28
+[01-Oct-2024 02:01:45 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Check_in::insert_user(), 3 passed in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20 and exactly 4 expected in C:\inetpub\wwwroot\checkin\conexion\functions.php:28
+Stack trace:
+#0 C:\inetpub\wwwroot\checkin\guardar_usuario.php(20): Check_in->insert_user()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\checkin\conexion\functions.php on line 28
+[01-Oct-2024 02:02:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Check_in::insert_user(), 3 passed in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20 and exactly 4 expected in C:\inetpub\wwwroot\checkin\conexion\functions.php:28
+Stack trace:
+#0 C:\inetpub\wwwroot\checkin\guardar_usuario.php(20): Check_in->insert_user()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\checkin\conexion\functions.php on line 28
+[01-Oct-2024 02:07:11 UTC] PHP Warning:  Undefined variable $insert_result in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20
+[01-Oct-2024 02:07:11 UTC] PHP Warning:  Undefined variable $insert_result in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 22
+[01-Oct-2024 02:08:01 UTC] PHP Warning:  Undefined variable $insert_result in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20
+[01-Oct-2024 02:08:01 UTC] PHP Warning:  Undefined variable $insert_result in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 22
+[01-Oct-2024 02:12:14 UTC] PHP Warning:  Undefined variable $insert_result in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20
+[01-Oct-2024 02:12:14 UTC] PHP Warning:  Undefined variable $ in C:\inetpub\wwwroot\checkin\guardar_usuario.php on line 20
+[02-Oct-2024 00:10:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 29
+[02-Oct-2024 00:12:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:29
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 29
+[02-Oct-2024 00:19:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:30
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 30
+[02-Oct-2024 00:20:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:31
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 31
+[02-Oct-2024 00:21:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:31
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 31
+[02-Oct-2024 00:25:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on array in C:\inetpub\wwwroot\checkin\detalle.php:31
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\detalle.php on line 31
+[02-Oct-2024 00:32:43 UTC] PHP Warning:  Undefined variable $variable in C:\inetpub\wwwroot\checkin\detalle.php on line 31
+[02-Oct-2024 00:32:43 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\checkin\detalle.php on line 31
+[02-Oct-2024 02:25:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function insert_user() in C:\inetpub\wwwroot\checkin\registrar.php:24
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\registrar.php on line 24
+[02-Oct-2024 03:14:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getUserId() in C:\inetpub\wwwroot\checkin\hock.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 3
+[02-Oct-2024 03:15:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getUserId() in C:\inetpub\wwwroot\checkin\hock.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 3
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 12:55:49 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\checkin\detalle.php on line 32
+[02-Oct-2024 13:50:53 UTC] PHP Warning:  Undefined variable $nombre in C:\inetpub\wwwroot\checkin\hock.php on line 46
+[02-Oct-2024 13:50:53 UTC] PHP Warning:  Undefined variable $apellido in C:\inetpub\wwwroot\checkin\hock.php on line 46
+[02-Oct-2024 14:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getUserId() in C:\inetpub\wwwroot\checkin\hock.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 6
+[02-Oct-2024 14:28:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getUserId() in C:\inetpub\wwwroot\checkin\hock.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 5
+[02-Oct-2024 14:29:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getUserId() in C:\inetpub\wwwroot\checkin\hock.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 5
+[02-Oct-2024 14:33:17 UTC] PHP Warning:  Undefined variable $db in C:\inetpub\wwwroot\checkin\hock.php on line 5
+[02-Oct-2024 14:33:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getUserId() on null in C:\inetpub\wwwroot\checkin\hock.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 5
+[02-Oct-2024 14:35:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in C:\inetpub\wwwroot\checkin\hock.php:44
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\checkin\hock.php on line 44
+[02-Oct-2024 14:37:17 UTC] PHP Warning:  Undefined variable $file in C:\inetpub\wwwroot\checkin\hock.php on line 60

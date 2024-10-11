@@ -1,0 +1,17 @@
+{
+    "name": "leonard.hernandez/checkin",
+    "autoload": {
+        "psr-4": {
+            "LeonardHernandez\\Checkin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Grupo PCR",
+            "email": "76816677+TecnologiaPCR@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
