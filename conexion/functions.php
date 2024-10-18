@@ -36,10 +36,10 @@ class Check_in extends Database{
         return $usuarios;
     }
 
-    public function insert_user($nombre, $apellido, $email, $firma_filename){
+    public function insert_user($nombre, $apellido, $email, $firma_filename, $foto){
                 $db = new Database();
                 $conn = $db->getMySQLConnection();
-                $insertar = $conn -> query("INSERT INTO user(nombre, apellido, email, firma, tipo_user, stat, departamento)VALUES('".$nombre."', '".$apellido."', '".$email."', '".$firma_filename."', 3, 1, 'Visitas')");
+                $insertar = $conn -> query("INSERT INTO user(nombre, apellido, email, firma, tipo_user, stat, departamento, foto)VALUES('".$nombre."', '".$apellido."', '".$email."', '".$firma_filename."', 3, 1, 'Visitas', '".$foto."')");
                 return $insertar;
     }
 

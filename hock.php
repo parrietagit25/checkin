@@ -11,37 +11,6 @@ foreach ($algo as $key => $value) {
     $email = $value['email'];
 }
 
-$webhookUrl = "https://pcrgrupo.webhook.office.com/webhookb2/c0c0b3d9-e0e2-47fb-8907-c9ef5ea6a23f@d3479728-038d-4986-8583-0bcaa8999569/IncomingWebhook/67eb5f2f15ca4278b17595f20602e237/63f1d382-382b-46eb-9090-7fdb9cce2616";
-
-$message = [
-    "type" => "message",
-    "text" => "<at>".$nombre." ".$apellido."</at>, Lo solicitan en la recepcion.",
-    "entities" => [
-        [
-            "type" => "mention",
-            "text" => "<at>".$nombre." ".$apellido."</at>",
-            "mentioned" => [
-                "id" => $email,
-                "name" => "".$nombre." ".$apellido.""
-            ]
-        ]
-    ]
-];
-
-$ch = curl_init($webhookUrl);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($message));
-
-$response = curl_exec($ch);
-
-if(curl_errno($ch)){
-    //echo 'Error:' . curl_error($ch);
-} else {
-    //echo 'Mensaje enviado correctamente a Microsoft Teams';
-}
-
 $mail = new PHPMailer(true);
 
 try {
@@ -74,8 +43,6 @@ try {
 } catch (Exception $e) {
     //echo "Error al enviar el correo: {$mail->ErrorInfo}";
 }
-
-curl_close($ch); 
 
 ?>
 <h2>Ya se solicito a <?php echo $nombre." ".$apellido; ?>, en momentos estara con usted.</h2>

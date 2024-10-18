@@ -12,7 +12,7 @@ $all_user = $db->todos();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Pedro Arrieta">
     <meta name="generator" content="Hugo 0.122.0">
     <title>CheckIn</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-bottom/">
@@ -182,44 +182,6 @@ $all_user = $db->todos();
       </div>
     </div>
 
-    <!--<div class="container" id="main_container">
-      <div class="bg-body-tertiary p-5 rounded mt-3">
-        <div id="conte_email" style="display: none;">
-              
-        </div>
-      </div>
-    </div>-->
-<!--
-<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Bottom navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropup">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropup</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    -->
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -265,20 +227,55 @@ $all_user = $db->todos();
                     document.getElementById('clear-signature').addEventListener('click', function () {
                         signaturePad.clear();
                     });
-                }, 2000);
+
+                    iniciar_captura();
+                
+                  }, 2000);
             })
             .catch((error) => console.error('Error:', error));
         }
 
+        function iniciar_captura() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+            const snapButton = document.getElementById('snap');
+            const fotoCapturada = document.createElement('img');  
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                video.srcObject = stream;
+            })
+            .catch(function(err) {
+                console.log("Error al acceder a la cámara: " + err);
+            });
+
+            snapButton.addEventListener('click', function() {
+                context.drawImage(video, 0, 0, 320, 240); 
+                const dataURL = canvas.toDataURL('image/png');
+                
+                document.getElementById('foto').value = dataURL;
+
+                video.style.display = 'none';
+
+                fotoCapturada.src = dataURL;  
+                fotoCapturada.width = 320; 
+                fotoCapturada.height = 240;
+                video.parentNode.insertBefore(fotoCapturada, video.nextSibling); 
+
+                snapButton.style.display = 'none';
+            });
+        }
+
+
         function reg_user() {
-            if (signaturePad && signaturePad.isEmpty()) {
+            if (signaturePad.isEmpty()) {
                 alert("Por favor, firme antes de enviar.");
                 return;
             }
 
-            document.querySelector('#reg_user').style.display = "none";
-
-            let firma = signaturePad.toDataURL();
+            let firma = signaturePad.toDataURL();  // Firma en base64
+            let foto = document.getElementById('foto').value;  // Foto en base64
 
             let nombre = document.getElementById('nombre_reg').value;
             let apellido = document.getElementById('apellido_reg').value;
@@ -294,6 +291,7 @@ $all_user = $db->todos();
             formData.append('apellido', apellido);
             formData.append('email', email);
             formData.append('firma', firma);  
+            formData.append('foto', foto);  // Añadir la foto al formulario
 
             fetch('registrar.php', {
                 method: 'POST',
@@ -301,14 +299,15 @@ $all_user = $db->todos();
             })
             .then(response => response.text())
             .then(data => {
-                document.querySelector("#loader").style.display = "none";
-                document.querySelector("#main_container").style.display = "block";
-                document.querySelector("#main_container").innerHTML = data;
 
-                $('#miSelect').select2({
-                    placeholder: "Seleccione una opción", 
-                    allowClear: true 
-                });
+              document.querySelector("#loader").style.display = "none";
+              document.querySelector("#main_container").style.display = "block";
+              document.querySelector("#main_container").innerHTML = data;
+
+              $('#miSelect').select2({
+                  placeholder: "Seleccione una opción", 
+                  allowClear: true 
+              });
 
             })
             .catch((error) => {

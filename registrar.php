@@ -9,20 +9,31 @@ include 'conexion/functions.php';
 
 $db = new Check_in();
 
-if (isset($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['firma'])) {
+if (isset($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['firma'], $_POST['foto'])) {
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $email = $_POST['email'];
     $firma = $_POST['firma'];  
+    $foto = $_POST['foto'];  // Foto en base64
 
+    // Proceso para guardar la firma
     $firma = str_replace('data:image/png;base64,', '', $firma);
     $firma = str_replace(' ', '+', $firma);
     $firma_data = base64_decode($firma);
 
-    $file = 'firmas/' . uniqid() . '.png';
-    file_put_contents($file, $firma_data);
+    $firma_file = 'firmas/' . uniqid() . '.png';
+    file_put_contents($firma_file, $firma_data);
 
-    $guardar_user = $db->insert_user($nombre, $apellido, $email, $file);
+    // Proceso para guardar la foto
+    $foto = str_replace('data:image/png;base64,', '', $foto);
+    $foto = str_replace(' ', '+', $foto);
+    $foto_data = base64_decode($foto);
+
+    $foto_file = 'fotos/' . uniqid() . '.png';  // Guardar en el directorio 'fotos'
+    file_put_contents($foto_file, $foto_data);
+
+    // Insertar usuario en la base de datos, ahora también con la ruta de la foto
+    $guardar_user = $db->insert_user($nombre, $apellido, $email, $firma_file, $foto_file);  // Asumiendo que la función ahora acepta foto
 
     if ($guardar_user) {
         echo "Registro completado con éxito";
@@ -30,7 +41,6 @@ if (isset($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['firma']
         $mail = new PHPMailer(true);
 
         try {
-
             $mail->isSMTP();
             $mail->Host       = 'smtp.office365.com';    
             $mail->SMTPAuth   = true;
@@ -42,24 +52,51 @@ if (isset($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['firma']
             $mail->setFrom('notificaciones@grupopcr.com.pa', 'GRUPO PCR');
             $mail->addAddress($email, $nombre . ' ' . $apellido); 
 
-            $mail->addAttachment($file);  
+            // Adjuntar firma y foto al correo
+            $mail->addAttachment($firma_file);  
+            $mail->addAttachment($foto_file);  // Añadir la foto como archivo adjunto
 
             $mail->isHTML(true);
             $mail->Subject = 'Bienvenido a GRUPO PCR - Terminos y Condiciones';
 
             $cuerpo = '
-                <h1>Términos y Condiciones de Visitas a GRUPO PCR</h1>
-                <p>Estimado(a) ' . $nombre . ' ' . $apellido . ',</p>
-                <p>Gracias por registrarse como visitante en nuestras instalaciones. Al ingresar, acepta los siguientes términos:</p>
-                <ul>
-                    <li>Respetar las normas de seguridad y comportamiento adecuado.</li>
-                    <li>Portar siempre la identificación de visitante.</li>
-                    <li>No ingresar a áreas restringidas sin autorización.</li>
-                    <li>El uso de dispositivos electrónicos está limitado a áreas permitidas.</li>
-                </ul>
-                <p>Adjunta a este correo se encuentra la firma electrónica que has realizado.</p>
-                <p>Atentamente,</p>
-                <p><strong>GRUPO PCR</strong></p>
+                Términos y Condiciones de Visita
+                Al acceder y utilizar las instalaciones de GRUPO PCR, los visitantes aceptan cumplir con los 
+                siguientes términos y condiciones, diseñados para garantizar la seguridad, el orden y la conservación del entorno.
+
+                Aceptación de Normas
+
+                Todo visitante se compromete a respetar y acatar las normas establecidas por GRUPO PCR, las cuales están diseñadas 
+                para garantizar la seguridad y el bienestar de todos los visitantes y el correcto funcionamiento del establecimiento.
+                Comportamiento y Orden
+
+                Los visitantes deberán mantener un comportamiento adecuado en todo momento. Cualquier conducta que altere el orden, la paz o 
+                que afecte negativamente la experiencia de otros visitantes o el estado de las instalaciones estará sujeta a la expulsión del lugar sin previo aviso.
+                Conservación del Entorno
+
+                Se espera que los visitantes colaboren en la preservación del entorno, evitando causar daño a las instalaciones, mobiliario, 
+                jardines o cualquier otro bien. Está estrictamente prohibido tirar basura fuera de los recipientes designados.
+                Prohibiciones
+
+                Está prohibido el ingreso de objetos peligrosos, sustancias ilícitas, y cualquier elemento que pueda poner en riesgo la seguridad 
+                del lugar o de las personas. Asimismo, el consumo de alcohol fuera de las áreas autorizadas no está permitido.
+                Acceso y Responsabilidad
+
+                Los visitantes deben seguir las indicaciones del personal de GRUPO PCR en todo momento. Cualquier incidente o accidente 
+                que ocurra debido al incumplimiento de estas normas será responsabilidad exclusiva del visitante.
+                Uso de las Instalaciones
+
+                Las instalaciones deberán ser utilizadas exclusivamente para los fines permitidos. El uso indebido de cualquier espacio o recurso 
+                dentro de GRUPO PCR será sancionado y puede resultar en la expulsión del visitante.
+                Política de Fotografías y Videos
+
+                La toma de fotografías y videos está permitida solo en las áreas designadas. No se permite el uso de drones sin autorización previa.
+                Modificaciones de los Términos
+
+                GRUPO PCR se reserva el derecho de modificar estos términos y condiciones en cualquier momento, sin previo aviso. Cualquier 
+                cambio será publicado en nuestras plataformas oficiales y entrará en vigor inmediatamente.
+                Al ingresar a nuestras instalaciones, usted acepta estos términos y condiciones. Su cooperación es fundamental para mantener un entorno 
+                seguro y ordenado para todos.
             ';
 
             $mail->Body = $cuerpo;

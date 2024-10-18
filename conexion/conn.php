@@ -4,7 +4,13 @@ class Database {
     private $mysql_host = "localhost";
     private $mysql_db_name = "check-in";
     private $mysql_username = "root";
+    private $mysql_password = "";
+    /*
+    private $mysql_host = "localhost";
+    private $mysql_db_name = "check-in";
+    private $mysql_username = "root";
     private $mysql_password = "elchamo1787$$$";
+    */
 
     protected $conn;
 
